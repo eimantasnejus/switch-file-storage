@@ -5,7 +5,7 @@
     'version': '1.0',
     'depends': ['product'],
     'author': 'Eimantas Nejus',
-    'category': 'Inventory',
+    'category': 'Inventory Control',
     'summary': 'product, template, images',
     'description': """
 Add Images to Product Template
@@ -13,7 +13,9 @@ Add Images to Product Template
 Allows to add up to 5 images to product.
 """,
     'website': 'https://www.odoo.com',
-    'data': [],
-    'test': [],
+    'data': [
+        'views/product_template.xml',
+    ],
     'installable': True,
+    'auto-install': False,
 }

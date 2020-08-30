@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record id="product_template_form_view_inherit_add_image" model="ir.ui.view">
+        <field name="name">product.template.form.add.image</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <field name="type" position="after">
+                <field name="additional_image_1" widget="image" class="oe_avatar oe_left"/>
+                <field name="additional_image_2" widget="image" class="oe_avatar oe_left"/>
+                <field name="additional_image_3" widget="image" class="oe_avatar oe_left"/>
+                <field name="additional_image_4" widget="image" class="oe_avatar oe_left"/>
+                <field name="additional_image_5" widget="image" class="oe_avatar oe_left"/>
+                <field name="filestore_images" nolabel="1" widget="many2many_kanban" class="oe_attachment oe_preview oe_inline"/>
+            </field>
+        </field>
+    </record>
+</data>
+</openerp>
